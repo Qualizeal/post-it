@@ -1,0 +1,10 @@
+{
+  "tool": "xraycloud",
+  "credential": {
+    "authType": "APIKEY",
+    "clientId": "4BB772BDFA8243E789F22BD2B6893BDE",
+    "clientSecret": "bac8964b51bbbbbe4ed089563c38a159297a47b7926f31e6069ae914b5eb2422"
+  },
+  "endPoint": "https://xray.cloud.getxray.app",
+  "automationReferenceIdentifier": "customfield_10048"
+}

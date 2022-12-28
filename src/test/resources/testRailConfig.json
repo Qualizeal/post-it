@@ -1,0 +1,10 @@
+{
+  "tool": "testrailcloud",
+  "credential": {
+    "authType": "BASIC",
+    "username": "arjun.rajeev@qualizeal.com",
+    "password": "90kk0J//E2RKCoWnId9h-uNYecsvv43z0KO2HxVVI"
+  },
+  "endPoint": "https://qualizeal.testrail.io",
+  "automationReferenceIdentifier": "custom_automation_reference"
+}

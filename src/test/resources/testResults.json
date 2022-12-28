@@ -1,0 +1,30 @@
+[
+  {
+    "name": "com.qualizeal.tests.DataTests.shouldFilterCsvDataBasedOnParametersSupplied()",
+    "status": "Pass",
+    "startTime": "Dec 26, 2022, 7:30:20 PM",
+    "endTime": "Dec 26, 2022, 7:30:20 PM",
+    "duration": 0
+  },
+  {
+    "name": "com.qualizeal.tests.DataTests.shouldFilterExcelDataBasedOnParametersSupplied()",
+    "status": "Pass",
+    "startTime": "Dec 26, 2022, 7:30:20 PM",
+    "endTime": "Dec 26, 2022, 7:30:20 PM",
+    "duration": 0
+  },
+  {
+    "name": "com.qualizeal.tests.DataTests.shouldImportAllTestDataFromCSV()",
+    "status": "Pass",
+    "startTime": "Dec 26, 2022, 7:30:26 PM",
+    "endTime": "Dec 26, 2022, 7:30:26 PM",
+    "duration": 0
+  },
+  {
+    "name": "com.qualizeal.tests.DataTests.shouldImportAllTestDataFromExcelSheet()",
+    "status": "Pass",
+    "startTime": "Dec 26, 2022, 7:30:26 PM",
+    "endTime": "Dec 26, 2022, 7:30:26 PM",
+    "duration": 0
+  }
+]
