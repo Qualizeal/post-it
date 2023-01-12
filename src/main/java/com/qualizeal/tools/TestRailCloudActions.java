@@ -9,6 +9,7 @@ import com.qualizeal.modal.common.TestConfig;
 import com.qualizeal.modal.common.ToolConfig;
 import com.qualizeal.modal.testrail.cloud.StatusCode;
 import com.qualizeal.modal.testrail.cloud.TestRailDetails;
+import lombok.Getter;
 import lombok.SneakyThrows;
 import lombok.extern.java.Log;
 
@@ -33,6 +34,7 @@ public class TestRailCloudActions implements ToolActions {
 
 	private ToolConfig toolConfig;
 	private List<TestConfig> testConfig;
+	@Getter
 	private List<String> runs;
 	private String authToken;
 
@@ -54,6 +56,12 @@ public class TestRailCloudActions implements ToolActions {
 	public ToolActions setRuns(List<String> runIds) {
 		this.runs = runIds;
 		return this;
+	}
+
+	@Override
+	public List<String> getTestDetails(String runId) {
+		List<TestRailDetails> testDetails = getTestExecutions(runId);
+		return testDetails.stream().map(TestRailDetails::getAutomationReference).collect(Collectors.toList());
 	}
 
 	@Override

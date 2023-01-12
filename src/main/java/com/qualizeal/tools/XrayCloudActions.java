@@ -11,6 +11,7 @@ import com.qualizeal.modal.common.ToolConfig;
 import com.qualizeal.modal.xray.cloud.RunResults;
 import com.qualizeal.modal.xray.cloud.StatusCode;
 import com.qualizeal.modal.xray.cloud.XrayDetails;
+import lombok.Getter;
 import lombok.SneakyThrows;
 import lombok.extern.java.Log;
 
@@ -31,6 +32,7 @@ import static com.qualizeal.modal.xray.cloud.XrayParameters.*;
 public class XrayCloudActions implements ToolActions {
 	private ToolConfig toolConfig;
 	private List<TestConfig> testConfig;
+	@Getter
 	private List<String> runs;
 	private String authToken;
 
@@ -52,6 +54,12 @@ public class XrayCloudActions implements ToolActions {
 	public ToolActions setRuns(List<String> runIds) {
 		this.runs = runIds;
 		return this;
+	}
+
+	@Override
+	public List<String> getTestDetails(String runId) {
+		List<XrayDetails> testDetails = getTestExecutions(runId);
+		return testDetails.stream().map(XrayDetails::getAutomationReference).collect(Collectors.toList());
 	}
 
 	@SneakyThrows

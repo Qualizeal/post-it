@@ -9,6 +9,8 @@ public interface ToolActions {
 	ToolActions setToolConfig(ToolConfig toolConfig);
 	ToolActions setTestConfig(List<TestConfig> testConfig);
 	ToolActions setRuns(List<String> runIds);
+	List<String> getRuns();
+	List<String> getTestDetails(String runId);
 	void authenticate();
 	void updateResults();
 }
