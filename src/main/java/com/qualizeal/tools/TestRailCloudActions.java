@@ -65,7 +65,7 @@ public class TestRailCloudActions implements ToolActions {
 	}
 
 	@Override
-	public void authenticate() {
+	public void authenticate() {;
 		if (AuthType.BASIC == toolConfig.getCredential().getAuthType()) {
 			String usernamePassword = toolConfig.getCredential().getUsername() + ":" + toolConfig.getCredential().getPassword();
 			authToken = "Basic " + Base64.getEncoder().encodeToString(usernamePassword.getBytes(StandardCharsets.UTF_8));

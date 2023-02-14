@@ -1,0 +1,10 @@
+{
+  "tool": "azuredevops",
+  "credential": {
+    "authType": "Basic",
+    "username": "rajeshwari.myneni@bldr.com",
+    "password": "efz7mat6glusxtxzknkak6ajnjismc4hvqg5wtxswep4jjuly43q"
+  },
+  "endPoint": "https://dev.azure.com/BLDR/CustomerPortal",
+  "automationReferenceIdentifier": "Microsoft.VSTS.TCM.AutomatedTestName"
+}

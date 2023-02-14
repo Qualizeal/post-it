@@ -25,12 +25,13 @@ public class PostIt {
 	private void post(String[] args) throws FileNotFoundException{
 		ConfigParser configParser = new ConfigParser();
 		ToolConfig toolConfig =  configParser.parse(args[0], ToolConfig.class);
+
 		List<TestConfig> testConfig =  Arrays.stream(configParser.parse(args[1], TestConfig[].class)).collect(Collectors.toList());
+
 		List<String> runIdentifiers = Arrays.stream(args, 2, args.length).collect(Collectors.toList());
 
 		ToolActions toolActions = ToolFactory.getToolActions(toolConfig.getTool());
 		toolActions.setToolConfig(toolConfig).setTestConfig(testConfig).setRuns(runIdentifiers);
-
 		toolActions.authenticate();
 		toolActions.updateResults();
 	}

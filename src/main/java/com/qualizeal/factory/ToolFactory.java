@@ -4,6 +4,7 @@ import com.qualizeal.exceptions.ToolNotImplemented;
 import com.qualizeal.tools.TestRailCloudActions;
 import com.qualizeal.tools.ToolActions;
 import com.qualizeal.tools.XrayCloudActions;
+import com.qualizeal.tools.ADOActions;
 
 public class ToolFactory {
 
@@ -17,6 +18,8 @@ public class ToolFactory {
 				return new XrayCloudActions();
 			case "testrailcloud":
 				return new TestRailCloudActions();
+			case "azuredevops":
+				return new ADOActions();
 			default:
 				throw new ToolNotImplemented(tool);
 		}

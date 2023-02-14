@@ -1,0 +1,10 @@
+{
+  "name": "My demo run",
+  "isAutomated":true,
+  "plan": {
+    "id": "16408"
+  },
+  "pointIds": [
+    3585
+  ]
+}
